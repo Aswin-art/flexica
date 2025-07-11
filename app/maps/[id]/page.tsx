@@ -601,6 +601,7 @@ export default function Page() {
                                 <Avatar>
                                   <Image
                                     src={
+                                      user?.imageUrl ??
                                       "https://www.pngkey.com/png/full/73-730434_04-dummy-avatar.png"
                                     }
                                     alt={feedback.user.name}

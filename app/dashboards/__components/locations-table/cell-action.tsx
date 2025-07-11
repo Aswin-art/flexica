@@ -112,12 +112,6 @@ export const CellAction: React.FC<any> = ({ data }) => {
           <DropdownMenuLabel>Actions</DropdownMenuLabel>
 
           <DropdownMenuItem
-            onClick={() => router.push(`/dashboard/facilities/${data.id}`)}
-            className="cursor-pointer"
-          >
-            <ScanSearch className="mr-2 h-4 w-4" /> Detail
-          </DropdownMenuItem>
-          <DropdownMenuItem
             onClick={() => setOpen(true)}
             className="cursor-pointer"
           >
