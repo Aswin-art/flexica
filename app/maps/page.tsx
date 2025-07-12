@@ -76,7 +76,7 @@ const MapClient = () => {
           <TabsContent value="location">
             <Places
               items={data?.data?.places ?? []}
-              itemsPerPage={10}
+              itemsPerPage={20}
               totalItems={data?.data?.totalItems ?? 0}
               loading={isLoading}
               isSubmission={false}
@@ -85,7 +85,7 @@ const MapClient = () => {
           <TabsContent value="submission">
             <Places
               items={data?.data?.places ?? []}
-              itemsPerPage={10}
+              itemsPerPage={20}
               totalItems={data?.data?.totalItems ?? 0}
               loading={isLoading}
               isSubmission={true}
