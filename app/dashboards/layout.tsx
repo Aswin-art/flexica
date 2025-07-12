@@ -17,7 +17,10 @@ export default function Layout({
     return null;
   }
 
-  if (user.id !== process.env.NEXT_PUBLIC_CLERK_ADMIN_ID) {
+  if (
+    user.id !== process.env.NEXT_PUBLIC_CLERK_ADMIN_ID ||
+    user.id !== process.env.NEXT_PUBLIC_CLERK_ADMIN_ID2
+  ) {
     return (
       <div className="flex flex-col items-center justify-center h-screen bg-blue-50 p-4">
         <div className="max-w-md w-full space-y-8 text-center">
